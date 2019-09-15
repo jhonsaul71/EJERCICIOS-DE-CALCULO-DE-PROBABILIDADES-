@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphics}
+\usepackage{enumerate}
+
+\title{\textbf{Práctica 01 CALCULO DE PROBABILIDADES}}
+\date{}
+\begin{document}
+\maketitle
+\begin{enumerate}
+\item  Demuestre que $\mathcal{F}$ es una $\sigma$ - álgebra de subconjuntos de si, y solo si,satisface las siguientes propiedades:
+\begin{enumerate}[a)]
+
+\item $\phi \in \mathcal{F}$\\[0.2cm]
+Demostración\\[0.2cm]
+$\Omega \in \mathcal{F}$ y $ \mathcal{F}$ colección cerrada\\[0.2cm]
+$\Omega^c = \phi\in\mathcal{F}$\\[0.2cm]
+
+\item A $\in \mathcal{F}\longrightarrow A^{c} \in\mathcal{F}$\\[0.2cm]
+Demostración\\[0.2cm]
+Supongamos que $\mathcal{F}$ es una $\sigma$ - álgebra sobre $\Omega$\\[0.2cm]
+$\Rightarrow \Omega \in\mathcal{F}$ como $\phi \in \mathcal{F}$ a su vez verifica que $\phi= {\Omega^c} \in  \mathcal{F}$
+
+\item $A_1,A_2,... \in \mathcal{F} \longrightarrow\displaystyle\bigcap_{n=1}^{\infty}{A_n \in N}$\\[0.2cm]
+
+\end{enumerate}
+
+\item Sea $\mathcal{F}$ una $\sigma$ álgebra; demuestre que $\mathcal{F}^c$ es una $\sigma$ - álgebra definida por: $\mathcal{F}^c$ = \{$A^c$: A $\in$ $\mathcal{F}$ \}
+
+\item Sea $\{A_n\}_{n\in\mathbb{N}}$ la sucesión de eventos, definida por:
+\[A_n = \begin{cases} 
+      A  & \mbox{si } n= 1,3,5,...        \\[0.5cm]
+      A^c  & \mbox{si } n = 2,4,6,...
+ \end{cases} \]
+Determine el: $\lim\limits_{x \to \infty}A_n$\\[0.2cm]
+Solución\\[0.2cm]
+$\lim\limits_{n \to \infty}{inf}A_n =\displaystyle\bigcup_{n=1}^{\infty}\displaystyle\bigcap_{k=n}^{\infty}A_k = \displaystyle\bigcup_{n=1}^{\infty}\left(A \cap A^c\right)= \displaystyle\bigcup_{n=1}^{\infty}\phi = \phi $\\[0.2cm]
+$\lim\limits_{n \to \infty}{sup}A_n= \displaystyle\bigcap_{n=1}^{\infty}\displaystyle\bigcup_{k=n}^{\infty}A_k = \displaystyle\bigcap_{n=1}^{\infty}\left(A \cap A^c\right)= \displaystyle\bigcap_{n=1}^{\infty}\Omega = \Omega $\\[0.2cm]
+$\Rightarrow \lim\limits_{n \to \infty}{inf}A_n \not = \lim\limits_{n \to \infty}{sup}A_n $\\[0.2cm]
+$\therefore \lim\limits_{n \to \infty}A_n \nexists$
+
+
+
+\item Sea $\{A_n\}_{n\in\mathbb{N}}$ la sucesión de eventos, definida por:
+\[A_n = \begin{cases} 
+  A  & \mbox{si } \left[-1/n,0\right]  \\[0.5cm]
+  A^c  & \mbox{si } \left[0,1/n\right] \end{cases} \]
+Determine el: $\lim\limits_{x \to \infty}A_n$
+
+\item Sean $A_1,A_2,...$ eventos aleatorios, demuestre :
+\begin{enumerate}[a)]
+\item $P\left(\displaystyle\bigcap_{i=1}^{n}{A_i}\right)\geq 1-\displaystyle\sum_{i=1}^{n}$ $P\left(A_{i}\right)^c$\\[0.2cm]
+Demostración\\[0.2cm]
+Si: $P\left(\displaystyle\bigcap_{i=1}^{n}{A_i}\right)= P\left(\displaystyle\bigcup_{i=1}^{n}{A_i^c}\right)^c$\\[0.2cm]
+$P\left(\displaystyle\bigcap_{i=1}^{n}{A_i}\right)= 1- P\left(\displaystyle\bigcup_{i=1}^{n}{A_i^c}\right)$\\[0.2cm]
+Recuerde: $P\left(\displaystyle\bigcup_{i=1}^{n}{A_i}\right) \leqslant\displaystyle\sum_{i=1}^{n}$ $P\left(A_{i}\right)$\\[0.2cm]
+$\Rightarrow P\left(\displaystyle\bigcap_{i=1}^{n}{A_i}\right)= 1- P\left(\displaystyle\bigcup_{i=1}^{n}{A_i^c}\right) \geqslant 1-\displaystyle\sum_{i=1}^{n}$ $P\left(A_{i}\right)^c $
+
+\item Si $P\left(A_{i}\right) \geq 1-e$ para i=1,2,...,n entonces $P\left(\displaystyle\bigcap_{i=1}^{n}\right)\geq 1-ne$\\[0.2cm]
+
+Demostración\\[0.2cm]
+tenemos: $P\left(A_{i}\right)\geqslant 1-e$\\[0.2cm]
+	$\Rightarrow e \geqslant 1-P\left(A_{i}\right)$\\[0.2cm]
+	$ \displaystyle\prod_{i=1}^{n}e \geqslant \displaystyle\prod_{i=1}^{n}P\left(A_{i}\right)^c$\\[0.2cm]
+$ne \geqslant \displaystyle\prod_{i=1}^{n}\left(1- P{\left(A_{i}\right)}\right)\Rightarrow ne\geqslant 1-P\left(\displaystyle\bigcap_{i=1}^{n}A_i\right)$ \\[0.2cm]
+$\therefore P\left(\displaystyle\bigcap_{i=1}^{n}A_i\right)\geqslant 1-ne $
+			 
+		
+\item $P\left(\displaystyle\bigcap_{k=1}^{\infty}{A_k}\right) \geq 1-\displaystyle\sum_{i=1}^{\infty}P\left(A_{k}^{c}\right) $
+\end{enumerate}
+
+\item Demuestre las desigualdades de Boole\\[0.2cm]
+
+
+\item Sea $\{A_n\}n \in {N}$ una sucesión de eventos. Demuestre que:
+\begin{enumerate}[a)]
+\item $\left(\displaystyle\lim_{n\longrightarrow \infty}{inf}A_n\right)^c =\displaystyle\lim_{n\longrightarrow \infty} {sup}{A_n^c} $
+\item $\left(\displaystyle\lim_{n\longrightarrow \infty}{inf}A_n\right)^c =\displaystyle\lim_{n\longrightarrow \infty} {inf}{A_n^c} $
+\item $P\left(\displaystyle\lim_{n\longrightarrow \infty}{inf}A_n\right) =1-P\left(\displaystyle\lim_{n\longrightarrow \infty}{sup}A_n^c\right)$ 
+\end{enumerate}
+
+\item Encuentre las condiciones sobre los eventos $A_1$ y $A_2$ para que la siguiente sucesión sea convergente.
+\[A_n = \begin{cases} 
+     A_1  & \mbox{si } $n es impar$   \\[0.5cm]
+      A_2  & \mbox{si }$ n es par$
+ \end{cases} \]
+
+\end{enumerate}
+\end{document}
