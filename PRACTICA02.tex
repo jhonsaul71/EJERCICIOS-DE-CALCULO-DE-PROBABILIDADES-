@@ -1,0 +1,143 @@
+\documentclass[13pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{latexsym,amsmath,amssymb,amsfonts} 
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+
+\title{\textbf{Práctica 02}}
+\date{}
+\author{Meneses Conde Jhon Saul}
+\begin{document}
+
+\maketitle
+\begin{enumerate}
+\item Dé un ejemplo de experimento aleatorio que es de interés para:un ingeniero electricista, un economista y un gerente de compañia de automoviles.
+\begin{enumerate}a)
+\item Un ingeniero electricista \\[0.1cm]
+Solución:\\[0.1cm]
+\begin{enumerate}a_1) Observar el tiempo de vida útil de un artefacto eléctrico.
+\end{enumerate}\\[0.1cm]
+\end{enumerate}
+\begin{enumerate}b Un economista\\[0.1cm]
+Solución:\\[0.1cm]
+\begin{enumerate}b_1) Proyectarse la tasa de devaluation de la moneda.\\[0.1cm]
+\end{enumerate}
+\end{enumerate}
+\begin{enumerate}c) Un gerente de una compañía de automóviles.\\[0.1cm]
+Solución:\\[0.1cm]
+\begin{enumerate}c_1)comprar por lo menos 10 vehículos blindados.\\[0.1cm]
+\end{enumerate}\\[0.01cm]} 
+\end{enumerate}
+
+\item Construir El espacio muestral apropiado para los siguientes experimentos aleatorios.\\[0.1cm]
+\begin{enumerate}a) Elegir una carta de una baraja de 52 cartas.\\[0.1cm] 
+Solución:\\[0.1cm]
+\begin{enumerate}a_1) \Omega ={Del 1 al 13 de diamantes(D), de corazones(C), de treboles(T) y de espadas(E).\\[0.1cm]
+\end{enumerate}\\[0.1cm]\Rightarrow\Omega =\lbrace C_1,C_2,C_3,...,C_13,T_1,T_2,T_3,...,T_13,D_1,D_2,D_3,...,D_13,E_1,E_2,E_3,...,E_13. \rbrac
+\end{enumerate}\\[0.1cm]
+
+\begin{enumerate}b) Verificar el estado de dos transistores (apagado o encendido).\\[0.1cm]
+solucion:\\[0.1cm]
+\begin{enumerate}b_1) \Omega =\lbrace{ Encendido-Encendido, Encendido- Apagado, Apagado-Encendido, Apagado-Apagado}\rbrac
+\end{enumerate}
+\end{enumerate}\\[0.1cm]
+
+\begin{enumerate}c)Verificar el estado de 10 transistores (apagado o encendido .\\[0.1cm] 
+solucion:\\[0.1cm]
+\begin{enumerate}c_1)\Omega ={\lbrace{ Encendido-Encendido, Encendido- Apagado, Apagado-Encendido,..., Apagado-Apagado}\rbrac}\\[0.1cm]
+\ast En éste caso el espacio muestral tiene 100 posibles eventos, por lo que es muy dificil crearlo,\\[0.1cm]
+ pero va a ser todas las posibles combinaciones entre encendidos y apagados.
+\end{enumerate}
+\end{enumerate}
+
+\begin{enumerate}d) Se lanzan n monedas y se observa el número de caras.\\[0.1cm] 
+solucion:\\[0.1cm]
+\begin{enumerate}d_1)\Omega =\lbrace$$(x+a)^n\rbrace\\[0.1cm] 
+\begin{center}
+{ \fboxsep 12pt
+
+\begin{minipage}[t]{10cm}
+
+$$(x+a)^n=\sum_{k=0}^n \binom{n}{k}x^k a^{n-k}$$
+\end{minipage}
+} }
+\end{center}
+\end{enumerate}}
+\end{enumerate}
+
+\item  Un inversionista planea escoger dos de las cinco oportunidades de inversión que le han recomendado. Describa el espacio muestral que representa las opciones posibles.\\[0.1cm] 
+solucion:\\[0.1cm]
+\ast el espacio muestral de los cinco oportunidades de inversión.\\[0.1cm]
+\Omega=\lbrace 1,2,3,4,5\rbrace\\[0.1cm]
+\ast planea escoger dos de las cinco oportunidades de inversión.\\[0.1cm]
+\Omega=\lbrace (1,1);(1,2);(1,3);(1,4);(1,5);(2,1);(2,2);(2,3);(2,4);(2,5);(3,1);(3,2);\\[0.1cm]
+(3,3);(3,4);(3,5);(4,1);(4,2);(4,3);(4,4);(4,5);(5,1);(5,2);(5,3);(5,4);(5,5)\rbrace\\[0.1cm]
+
+\item  Tres artículos son extraídos con reposición, de un lote de mercancías; cada artículo ha de ser identificado como defectuosos "D" y no defectuoso "N“. Describa todos los puntos posibles del espacio muestral para este experimento.\\[0.1cm] 
+solucion:\\[0.1cm]
+Los tres articulos son\lbrace 1,2,3\rbrace\\[0.1cm] 
+D: Defectoso\\[0.1cm]
+N:No defectoso\\[0.1cm]
+\Omega=\lbrace(x,y)/x=1,2,3; y=D,N \rbrace\\[0.1cm] 
+\Omega=\lbrace(1,D)(1,N);(2,D);(2,N);(3,D);(3,N) \rbrace\\[0.1cm]
+
+\item Dos personas A y B se distribuyen al azar en tres oficinas numerada 1, 2 y 3. Si las dos personas pueden estar en la misma oficina, defina un espa_ ció muestral adecuado.\\[0.1cm] 
+solucion:\\[0.1cm]
+A: Persona 1\\[0.1cm]
+B:Persona 2\\[0.1cm] 
+Numero de oficinas  son\lbrace 1,2,3\rbrace\\[0.1cm] 
+\Omega=\lbrace(x,y)/x=A,B; y=1,2,3 \rbrace\\[0.1cm] 
+\Omega=\lbrace(A,1)(B,1);(A,2);(B,2);(A,3);(B,3) \rbrace\\[0.1cm]
+
+
+\item  Tres personas A , B y C se distribuyen al azar en dos oficinas numeradas con 1 y 2. Describa un espacio muestral adecuado a este experimento.
+\begin{enumerate}a) si los tres pueden estar en una misma oficina\\[0.1cm]
+solucion:\\[0.1cm]
+A: Persona 1\\[0.1cm]
+B:Persona 2\\[0.1cm] 
+C:Persona 3\\[0.1cm] 
+Numero de oficinas  son\lbrace 1,2\rbrace\\[0.1cm] 
+\Omega=\lbrace(x,y)/x=A,B,C ; y=1,2 \rbrace\\[0.1cm] 
+\Omega=\lbrace(A,1)(B,1);(C,1);(A,2);(B,2);(B,3) \rbrace\\[0.1cm] 
+
+\end{enumerate}
+\begin{enumerate}B)sí sólo se puede asignar una persona a cada oficina.\\[0.1cm] 
+solucion:\\[0.1cm] 
+\Omega=\lbrace((A,1),(B,1));((C,1),(A,2));((B,2),(B,3));((A,1),(B,3));((B,1),(B,2));((A,2),(C,1)) \rbrace\\[0.1cm] 
+\end{enumerate}
+
+\item Durante el día, una máquina produce tres artículos cuya calidad individual, definida como defectuoso o no defectuoso, se determina al final del día. Describa el espacio muestral generado por la producción diaria.\\[0.1cm]
+solucion:\\[0.1cm]
+\Omega =X_1,X_2,X_3\\[0.1cm]
+X_i=D,B ;      i=1,2,3\\[0.1cm]
+donde:\\[0.1cm]
+D:Defectuoso\\[0.1cm]
+B:No defectoso\\[0.1cm]
+\Omega=\lbrace (X_1D,X_2B,X_3B);(X_1B,X_2D,X_3B);(X_1B,X_2B,X_3D);\\[0.1cm]
+(X_1D,X_2D,X_3D);(X_1D,X_2D,X_3B);(X_1D,X_2B,X_3D);(X_1B,X_2D,X_3D);(X_1B,X_2B,X_3B)\rbrace\\[0.1cm] 
+\Omega=\lbrace DDD,DDB,DBD,BDD,BBD,BDB,DBB,BBB\rbrace\\[0.1cm] 
+
+\item  El ala de un avión se ensambla con un número grande de remaches. Se inspecciona una sola unidad y el factor de importancia es el número de remaches defectuosos. Describa el espacio muestral.\\[0.1cm]
+solucion:\\[0.1cm]
+
+El número de remaches de un avión es un gran número que podemos considerar infinito.
+
+X=nº remaches defectuosos  tiene un espacio muestral 
+
+\Omega =\lbrace{0,1,2,3,4,..... }\rbrace = N \cup \lbrace{0}\rbrace
+
+\item  Suponga que la demanda diaria de gasolina en una estación de servicio está acotada por 1,000 galones, que se lleva a un registro diario de venta. Describa el espacio muestral.\\[0.1cm]
+solucion:\\[0.1cm] 
+
+\item Se desea medir la resistencia al corte de dos puntos de soldadura. Suponiendo que el límite superior está dado por U, describa el espacio muestral .\\[0.1cm]
+solucion:\\[0.1cm] 
+
+\item  De un grupo de transistores producidos bajo condiciones similares, se eScoge una sola unidad, se coloca bajo prueba en un ambiente similar a su uso diseñado y luego se prueba hasta que falla. Describir el espacio muestral. \\[0.1cm]
+solucion:\\[0.1cm]
+
+
+\end{enumerate}
+\end{document}
