@@ -1,0 +1,362 @@
+\documentclass[13pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{makeidx}
+\usepackage{graphicx}
+\usepackage{latexsym,amsmath,amssymb,amsfonts} 
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+
+\title{\textbf{Práctica 02}}
+\date{}
+\author{Meneses Conde Jhon Saul}
+\begin{document}
+
+\maketitle
+\begin{enumerate}
+\item Dé un ejemplo de experimento aleatorio que es de interés para:un ingeniero electricista, un economista y un gerente de compañia de automoviles.
+\begin{enumerate}a)
+\item Un ingeniero electricista \\[0.1cm]
+Solución:\\[0.1cm]
+\begin{enumerate}a_1) Observar el tiempo de vida útil de un artefacto eléctrico.
+\end{enumerate}\\[0.1cm]
+\end{enumerate}
+\begin{enumerate}b Un economista\\[0.1cm]
+Solución:\\[0.1cm]
+\begin{enumerate}b_1) Proyectarse la tasa de devaluation de la moneda.\\[0.1cm]
+\end{enumerate}
+\end{enumerate}
+\begin{enumerate}c) Un gerente de una compañía de automóviles.\\[0.1cm]
+Solución:\\[0.1cm]
+\begin{enumerate}c_1)comprar por lo menos 10 vehículos blindados.\\[0.1cm]
+\end{enumerate}\\[0.01cm]} 
+\end{enumerate}
+
+\item Construir El espacio muestral apropiado para los siguientes experimentos aleatorios.\\[0.1cm]
+\begin{enumerate}a) Elegir una carta de una baraja de 52 cartas.\\[0.1cm] 
+Solución:\\[0.1cm]
+\begin{enumerate}a_1) \Omega ={Del 1 al 13 de diamantes(D), de corazones(C), de treboles(T) y de espadas(E).\\[0.1cm]
+\end{enumerate}\\[0.1cm]\Rightarrow\Omega =\lbrace C_1,C_2,C_3,...,C_13,T_1,T_2,T_3,...,T_13,D_1,D_2,D_3,...,D_13,E_1,E_2,E_3,...,E_13. \rbrac
+\end{enumerate}\\[0.1cm]
+
+\begin{enumerate}b) Verificar el estado de dos transistores (apagado o encendido).\\[0.1cm]
+solucion:\\[0.1cm]
+\begin{enumerate}b_1) \Omega =\lbrace{ Encendido-Encendido, Encendido- Apagado, Apagado-Encendido, Apagado-Apagado}\rbrac
+\end{enumerate}
+\end{enumerate}\\[0.1cm]
+
+\begin{enumerate}c)Verificar el estado de 10 transistores (apagado o encendido .\\[0.1cm] 
+solucion:\\[0.1cm]
+\begin{enumerate}c_1)\Omega ={\lbrace{ Encendido-Encendido, Encendido- Apagado, Apagado-Encendido,..., Apagado-Apagado}\rbrac}\\[0.1cm]
+\ast En éste caso el espacio muestral tiene 100 posibles eventos, por lo que es muy dificil crearlo,\\[0.1cm]
+ pero va a ser todas las posibles combinaciones entre encendidos y apagados.
+\end{enumerate}
+\end{enumerate}
+
+\begin{enumerate}d) Se lanzan n monedas y se observa el número de caras.\\[0.1cm] 
+solucion:\\[0.1cm]
+\begin{enumerate}d_1)\Omega =\lbrace$$(x+a)^n\rbrace\\[0.1cm] 
+\begin{center}
+{ \fboxsep 12pt
+
+\begin{minipage}[t]{10cm}
+
+$$(x+a)^n=\sum_{k=0}^n \binom{n}{k}x^k a^{n-k}$$
+\end{minipage}
+} }
+\end{center}
+\end{enumerate}}
+\end{enumerate}
+
+\item  Un inversionista planea escoger dos de las cinco oportunidades de inversión que le han recomendado. Describa el espacio muestral que representa las opciones posibles.\\[0.1cm] 
+solucion:\\[0.1cm]
+\ast el espacio muestral de los cinco oportunidades de inversión.\\[0.1cm]
+\Omega=\lbrace 1,2,3,4,5\rbrace\\[0.1cm]
+\ast planea escoger dos de las cinco oportunidades de inversión.\\[0.1cm]
+\Omega=\lbrace (1,1);(1,2);(1,3);(1,4);(1,5);(2,1);(2,2);(2,3);(2,4);(2,5);(3,1);(3,2);\\[0.1cm]
+(3,3);(3,4);(3,5);(4,1);(4,2);(4,3);(4,4);(4,5);(5,1);(5,2);(5,3);(5,4);(5,5)\rbrace\\[0.1cm]
+
+\item  Tres artículos son extraídos con reposición, de un lote de mercancías; cada artículo ha de ser identificado como defectuosos "D" y no defectuoso "N“. Describa todos los puntos posibles del espacio muestral para este experimento.\\[0.1cm] 
+solucion:\\[0.1cm]
+Los tres articulos son\lbrace 1,2,3\rbrace\\[0.1cm] 
+D: Defectoso\\[0.1cm]
+N:No defectoso\\[0.1cm]
+\Omega=\lbrace(x,y)/x=1,2,3; y=D,N \rbrace\\[0.1cm] 
+\Omega=\lbrace(1,D)(1,N);(2,D);(2,N);(3,D);(3,N) \rbrace\\[0.1cm]
+
+\item Dos personas A y B se distribuyen al azar en tres oficinas numerada 1, 2 y 3. Si las dos personas pueden estar en la misma oficina, defina un espa_ ció muestral adecuado.\\[0.1cm] 
+solucion:\\[0.1cm]
+A: Persona 1\\[0.1cm]
+B:Persona 2\\[0.1cm] 
+Numero de oficinas  son\lbrace 1,2,3\rbrace\\[0.1cm] 
+\Omega=\lbrace(x,y)/x=A,B; y=1,2,3 \rbrace\\[0.1cm] 
+\Omega=\lbrace(A,1)(B,1);(A,2);(B,2);(A,3);(B,3) \rbrace\\[0.1cm]
+
+
+\item  Tres personas A , B y C se distribuyen al azar en dos oficinas numeradas con 1 y 2. Describa un espacio muestral adecuado a este experimento.
+\begin{enumerate}a) si los tres pueden estar en una misma oficina\\[0.1cm]
+solucion:\\[0.1cm]
+A: Persona 1\\[0.1cm]
+B:Persona 2\\[0.1cm] 
+C:Persona 3\\[0.1cm] 
+Numero de oficinas  son\lbrace 1,2\rbrace\\[0.1cm] 
+\Omega=\lbrace(x,y)/x=A,B,C ; y=1,2 \rbrace\\[0.1cm] 
+\Omega=\lbrace(A,1)(B,1);(C,1);(A,2);(B,2);(B,3) \rbrace\\[0.1cm] 
+
+\end{enumerate}
+\begin{enumerate}B)sí sólo se puede asignar una persona a cada oficina.\\[0.1cm] 
+solucion:\\[0.1cm] 
+\Omega=\lbrace((A,1),(B,1));((C,1),(A,2));((B,2),(B,3));((A,1),(B,3));((B,1),(B,2));((A,2),(C,1)) \rbrace\\[0.1cm] 
+\end{enumerate}
+
+\item Durante el día, una máquina produce tres artículos cuya calidad individual, definida como defectuoso o no defectuoso, se determina al final del día. Describa el espacio muestral generado por la producción diaria.\\[0.1cm]
+solucion:\\[0.1cm]
+\Omega =X_1,X_2,X_3\\[0.1cm]
+X_i=D,B ;      i=1,2,3\\[0.1cm]
+donde:\\[0.1cm]
+D:Defectuoso\\[0.1cm]
+B:No defectoso\\[0.1cm]
+\Omega=\lbrace (X_1D,X_2B,X_3B);(X_1B,X_2D,X_3B);(X_1B,X_2B,X_3D);\\[0.1cm]
+(X_1D,X_2D,X_3D);(X_1D,X_2D,X_3B);(X_1D,X_2B,X_3D);(X_1B,X_2D,X_3D);(X_1B,X_2B,X_3B)\rbrace\\[0.1cm] 
+\Omega=\lbrace DDD,DDB,DBD,BDD,BBD,BDB,DBB,BBB\rbrace\\[0.1cm] 
+
+\item  El ala de un avión se ensambla con un número grande de remaches. Se inspecciona una sola unidad y el factor de importancia es el número de remaches defectuosos. Describa el espacio muestral.\\[0.1cm]
+solucion:\\[0.1cm]
+
+El número de remaches de un avión es un gran número que podemos considerar infinito.
+
+X=nº remaches defectuosos  tiene un espacio muestral 
+
+\Omega =\lbrace{0,1,2,3,4,..... }\rbrace = N \cup \lbrace{0}\rbrace
+
+\item  Suponga que la demanda diaria de gasolina en una estación de servicio está acotada por 1,000 galones, que se lleva a un registro diario de venta. Describa el espacio muestral.\\[0.1cm]
+solucion:\\[0.1cm] 
+
+\item Se desea medir la resistencia al corte de dos puntos de soldadura. Suponiendo que el límite superior está dado por U, describa el espacio muestral .\\[0.1cm]
+solucion:\\[0.1cm] 
+
+\item  De un grupo de transistores producidos bajo condiciones similares, se eScoge una sola unidad, se coloca bajo prueba en un ambiente similar a su uso diseñado y luego se prueba hasta que falla. Describir el espacio muestral. \\[0.1cm]
+solucion:\\[0.1cm]
+
+ \item Una urna contiene cuatro fichas numeradas: 2,4,6, y 8 ; una segunda urna
+contiene cinco fichas numeradas: 1,3,5,7, y 9. Sea un experimento aleato
+rio que consiste en extraer una ficha de la primera urna y luego una ficha de la segunda urna, describir el espacio muestral.
+
+SOLUCIÓN:\\[0.2cm]
+$\ U_{1}=\lbrace2,4,6,8\rbrace \, U_{2}=\lbrace1,3,5,7,9\rbrace$
+
+A: Extraer una ficha de la primera urna  y luego una ficha de la segunda urna.\\[0.2cm]
+$\Omega_{A}=\lbrace (x,y)\diagup x \in \lbrace2,4,6,8\rbrace ; y \in \lbrace1,3,5,7,9\rbrace\rbrace$
+
+\item Una urna contiene tres fichas numeradas: 1,2,3; un experimento consiste
+en lanzar un dado y luego extraer una ficha de la urna. Describir el espacio muestral.
+
+SOLUCIÓN:\\[0.2cm]
+$\ U_{1}=\lbrace1,2,3\rbrace       \,   D_{1}=\lbrace1,2,3,4,5,6\rbrace$
+
+A: Lanzar un dado y luego extraer una ficha de la urna 
+
+$\Omega_{A}=\lbrace (x,y) \diagup x \in \lbrace1,2,3,4,5,6\rbrace ;  y \in \lbrace1,2,3\rbrace \rbrace$
+
+
+\item Una línea de producción clasifica sus productos en defectuosos "D" y no
+defectuosos "N". De un almacén donde guardan la producción diaria de esta
+línea, se extraen artículos hasta observar tres defectuosos consecutivos
+o hasta que se hayan verificado cinco artículos. Construir el espacio 
+muestral.
+
+SOLUCIÓN:\\[0.2cm]
+$\Omega=\lbrace DDD,DDNDD,DDNDN,DDNND,DDNNN,DNDDD,DNDDN,$
+
+$ DNDND,DNDNN,DNNDD,DNNDN,DNNND,DNNNN,NDDD,$
+
+$ NDDND,NDDNN,NDNDD,NDNDN,NDNND,NDNNN,NNDDD,$
+
+$ NNDDN,NNDND,NNDNN,NNNDD,NNNDN,NNNND,NNNNN\rbrace$
+
+\item Lanzar un dado hasta que ocurra el número 4. Hallar el espacio muestral
+asociado a este experimento.
+
+SOLUCIÓN:\\[0.2cm]
+$\Omega=\lbrace x,x4,xx4,xxx4, ....\rbrace$ ;
+
+ donde  X=obtener un número diferente de 2 
+
+
+\item Una moneda se lanza tres veces. Describa los siguientes eventos:
+
+\begin{enumerate}[A: ]
+
+\item " ocurre por lo menos 2 caras".
+
+$\ A=\lbrace CCS,CSC,SCC,CCC\rbrace$
+
+\item " ocurre sello en el tercer lanzamiento".
+
+$\ B=\lbrace CCS,CSS,SCS,SSS\rbrace$
+
+\item " ocurre a lo más una cara".
+
+$\ C=\lbrace SSS,CSS,SCS,SCC\rbrace$
+
+\end{enumerate}
+
+\item En cierto sector de Lima, hay cuatro supermercados (numeradas 1,2,3,4).
+Seis damas que viven en ese sector seleccionan al azar y en forma independiente, un supermercado para hacer sus compras sin salir de su sector. 
+
+\begin{enumerate}[a) ]
+
+\item Dar un espacio muestral adecuado para este experimento.
+
+SOLUCIÓN:\\[0.2cm]
+$\ DAMAS=\lbrace1,2,3,4,5,6\rbrace$    $\ SUPERMERCADOS=\lbrace1,2,3,4\rbrace$
+
+$\Omega=\lbrace (x,y) \diagup x \in \lbrace1,2,3,4,5,6\rbrace   \,  y \in \lbrace1,2,3,4\rbrace \rbrace $
+
+\item  Describir los siguientes eventos:
+
+\begin{enumerate}[A: ]
+
+\item "Todas las damas escogen uno de los tres primeros supermercados" \\[0.2cm]
+$\ A=\lbrace (1,1),(1,2),(1,3),(1,4),(2,1),(2,2),(2,3),(2,4),(3,1),(3,2),$
+$\ (3,3),(3,4),(4,1),(4,2),(4,3),(4,4),(5,1),(5,2),(5,3),(5,4),(6,1),$
+$\ (6,2),(6,3),(6,4)\rbrace$
+
+\item "Dos escogen el supermercado N° 2 , dos el supermercado N°3 y las -
+otras dos el N° 4".\\[0.2cm]
+$\ B=\lbrace (           $                             
+
+
+
+\item "Dos escogen el supermercado N° 2 y las otras diferentes supermercados".
+
+\end{enumerate}
+
+\end{enumerate}
+
+\item Tres máquinas idénticas que funcionan independientemente se mantienen -
+funcionando hasta darle de baja y se anota el tiempo que duran. Suponer
+que ninguno dura más de 10 años.
+
+\begin{enumerate}[a) ]
+
+\item Definir un espacio muestral adecuado para este experimento
+
+SOLUCIÓN:\\[0.2cm]
+$\Omega=\lbrace (x,y) \diagup x \in \lbrace1,2,3\rbrace ; y \in \lbrace1,2,3,4,5,6,7,8,9,10\rbrace \rbrace$
+
+\item Describir los siguientes eventos:
+
+\begin{enumerate}[A: ]
+
+\item "Las tres máquinas duran más de 8 años".\\[0.2cm]
+$\ A=\lbrace (1,8),(1,9),(1,10),(2,8),(2,9),(2,10),(3,8),$
+
+$ \ (3,9),(3,10)\rbrace$
+
+\item "El menor tiempo de duración de los tres es de 7 años".\\[0.2cm]
+$\ A=\lbrace (1,7),(1,8),(1,9),(1,10),(2,7),(2,8),(2,9),(2,10),(3,7)$
+
+$\ (3,8),(3,9),(3,10)\rbrace$
+
+\item "El menor tiempo de duración de los tres es de 7 años".\\[0.2cm]
+$\ A=\lbrace (1,7),(1,8),(1,9),(1,10),(2,7),(2,8),(2,9),(2,10),(3,7)$
+
+
+$\ (3,8),(3,9),(3,10)\rbrace$
+\item El mayor tiempo de duración de los tres es de 9 años".\\[0.2cm]
+$\ D=\lbrace (x,y) \diagup x \in \lbrace1,2,3\rbrace ; y \in \lbrace1,2,3,4,5,6,7,8,9\rbrace \rbrace$
+
+
+\end{enumerate}
+
+\end{enumerate}
+
+\item En el espacio muestral del problema 4, describe los siguientes eventos:
+
+\begin{enumerate}[A: ]
+
+\item "Ocurre al menos 2 artículos no defectuosos".\\[0.2cm]
+
+$\ A=\lbrace DNN,NDN,NND,NNN\rbrace$
+
+\item "Ocurre exactamente 2 artículos no defectuosos"\\[0.2cm]
+$\ A=\lbrace DNN,NDN,NND\rbrace$
+
+\end{enumerate}
+
+\item En el problema 16, describir el evento, "se necesitan por lo menos 5 lanzamientos".
+
+Se necesitan por lo menos 5 lanzamientos = $\lbrace xxxx4.xxxxx4,xxxxxx4,....\rbrace$ ; donde x = obtener un número diferente de 4 .
+
+\item El gerente general de una firma comercial, entrevista a 10 aspirantes a
+un puesto. Cada uno de los aspirantes es calificado como: Deficiente, Regular, Bueno, Excelente.
+
+\begin{enumerate}[a) ]
+
+\item Dar un espacio muestral adecuado para este experimento .
+
+$\Omega=\lbraceD,R,B,E\rbrace^{10} = \lbrace (\ x_{1},x_{2},x_{3},x_{4},x_{5},x_{6},x_{7},x_{8},x_{9},x_{10}}) \diagup x_{i}=D,R,B,E ; i=1,2,3,...,10 \rbrace$
+
+\item Describir los siguientes eventos. 
+
+\begin{enumerate}[A:]
+
+\item "Todos los aspirantes son calificados como deficientes o excelentes"
+
+$\ A=\lbrace (D,D,D,D,D,D,D,D,D,D) , (E,E,E,E,E,E,E,E,E,E) \rbrace$
+
+\item "Sólo la última persona extrevistada es calificado como excelente"
+
+$\ B= \lbrace D,R,B\rbrace^9* \lbrace E\rbrace$
+
+\end{enumerate}
+
+\end{enumerate}
+
+\item Considere el experimento de contar el número de carros que pasan por un
+punto de una autopista. Describa los siguientes eventos:
+
+\begin{enumerate}[A; ]
+
+\item "Pasan un número par de carros".
+
+$\ A=\lbrace0,2,4,6,8,10,....\rbrace$
+
+\item "El número de carros que pasan es múltiplo de 6 ".
+
+$\ B=\lbrace0,6,12,18,....\rbrace$
+
+\item "Pasan por lo menos 20 carros"
+
+$\ C=\lbrace20,21,22,23,24,...\rbrace$
+
+\item "Pasan a lo más 15 carros".
+ 
+$\ D=\lbrace1,2,3,4,.....,14,15\rbrace$
+
+\end{enumerate}
+
+\item En el problema 12. Describir los siguientes eventos.
+
+ (1) en la parte (a)
+
+\begin{enumerate}[A: ]
+
+\item "Los dos transistores duran a lo más 2,000 horas".\\[0.2cm]
+$\ A=\lbrace (x,y) \diagup 0\leq x,y\leq2000\rbrace$ , donde x: el tiempo de falla del transistor designado como número 1; y: el tiempo de falla del transistor designado como número 2.
+
+\item "El primero dura más de 2,000 horas, el otro menos de 3,000 horas".\\[0.2cm]
+$\ B=\lbrace (x,y) \diagup 2000\leq x<\infty ; 0\leq y\leq3000\rbrace$ 
+
+(2) En la parte (b).
+
+\item "Los cinco duran por lo menos 1,000 horas pero menos de 2,000 horas".\\[0.2cm]
+$\ C=\lbrace ( x_{1},x_{2},x_{3},x_{4},x_{5}) \diagup 1000\leqx_{1},x_{2},x_{3},x_{4},x_{5}<2000\rbrace$
+
+\item "El primero dura más de 2,000 horas, los demás a lo más 2,500 horas".\\[0.2cm]
+$\ D=\lbrace ( x_{1},x_{2},x_{3},x_{4},x_{5}) \diagup 2000\leq x_{1}<\infty ; 0\leq x_{2},x_{3},x_{4},x_{5}\leq2500\rbrace$
+
+
+\end{enumerate}
+\end{document}
